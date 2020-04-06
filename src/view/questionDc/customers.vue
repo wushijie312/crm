@@ -196,8 +196,8 @@ export default {
         keyword: this.keyword,
         pageSize: 30,
         page: page,
-         dept_id: '',
-        level: ''
+         dept_id: this.dept_id=="全部部门"?'':this.dept_id,
+        level: this.level=="全部客户"?'':this.level
       });
     },
     scrollBottom() {
